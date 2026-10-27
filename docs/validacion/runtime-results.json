@@ -1,0 +1,12 @@
+[
+  {
+    "mode": "start",
+    "node": "v22.13.0",
+    "checks": "arranque, catálogo vacío, destino no configurado, enlace profundo y 404 JSON; proxy y origen en desarrollo"
+  },
+  {
+    "mode": "dev",
+    "node": "v22.13.0",
+    "checks": "arranque, catálogo vacío, destino no configurado, enlace profundo y 404 JSON; proxy y origen en desarrollo"
+  }
+]

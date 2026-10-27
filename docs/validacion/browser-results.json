@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-26",
+  "browser": "Microsoft Edge headless",
+  "syntheticData": true,
+  "whatsappSent": false,
+  "checks": [
+    "Catálogo inicial vacío; sin datos comerciales precargados.",
+    "Seis altas por formulario; confirmación visible; máximo 518 ms por alta con datos preparados.",
+    "Búsqueda/filtro/detalle/regreso: 367 ms; filtros conservados.",
+    "Pedido exacto, controles, recarga y retorno conservan selección; enlace capturado sin envío real.",
+    "Tarjeta antigua rechazada sin incremento; retirada parcial y total conservan aviso con nombre.",
+    "Confirmación accesible, Escape cancela y devuelve foco; retirada real, logout y protección posterior.",
+    "Sin errores JavaScript de página; sin desbordamiento en 360, 390 y 1366 píxeles.",
+    "Mismo perfil cerrado/reabierto conserva pedido; cookie de sesión restaurada admite acceso antes del límite y es rechazada a las ocho horas.",
+    "Doscientos productos y diez lecturas concurrentes: 329 ms; listado utilizable en 656 ms, JSON sin BLOB.",
+    "Reapertura y restauración de copia en DB aislada conserva catálogo y fotos."
+  ]
+}
