@@ -29,3 +29,21 @@ antes de ejecutarlos (la aplicación aún no está inicializada).
   implementar después y exigir que `npm test` pase antes de cerrar la funcionalidad.
 
 Las reglas de producto viven en .specify/memory/constitution.md y el estado del producto en specs/README.md
+
+## Cierre de una feature
+
+Cuando el usuario pida «cerrar la feature», ejecutar en este orden:
+
+1. Verificar el working tree y commitear los cambios pendientes. Identificar la
+   rama de la feature, su número `NNN` y su nombre antes de cambiar de rama.
+2. Ejecutar `npm test`. Si falla, detener el flujo e informar el resultado.
+3. Hacer checkout de `main`.
+4. Fusionar la rama de la feature con `--no-ff` y el mensaje
+   `Merge feature NNN: <nombre>`, sustituyendo el número y el nombre de la feature.
+5. Borrar la rama local de la feature y su rama remota correspondiente.
+6. Subir `main` al remoto.
+7. Mostrar `git log --oneline --graph -10`.
+
+Si un push falla (incluida la eliminación de la rama remota), informar el error
+y dejar claro qué pasos sí se completaron. No presentar el cierre como completo
+si queda alguna operación pendiente.
